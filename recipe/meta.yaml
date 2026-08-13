@@ -1,13 +1,13 @@
 {% set name = "gspread-pandas" %}
-{% set version = "3.3.0" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gspread-pandas-{{ version }}.tar.gz
-  sha256: aac84bd63594db6271ad2cfe10be64614ea5d1129d063ca57b40c2b9dcc18013
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 4db9e901ac3c91535b2b7226015799ffce0a24fdde77a53251d83128af83c48b
 
 build:
   noarch: python
